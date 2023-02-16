@@ -1,0 +1,14 @@
+{
+    "env": {
+        "ACCESS_TOKEN": "EAANfM22NhkwBAIeoimtLHEdjaDZBmqjWZC5dG4m2MMMiPHmuWUtKRkikncELRSQNnPy7JlB0Wn01YVtXhZCGdvrXTstmyKqZC2iq9lpsiOMUdrwZApP0KhTkKueMeHYE16M6fKZAx164ri9Q1KZBtOsG1CowrdG57TcPFzgnTCtkn7LXU9PtlSUF5X4oCTZCYRPoXjT8VgZApGQZDZD",
+        "VERIFY_TOKEN": "DNtk3MvN3dBmL77a"
+    },
+    "builds": [
+        { "src": "*.html", "use": "@vercel/static" },
+        { "src": "app/*.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/", "dest": "/app/main.py" }
+    ]
+}
