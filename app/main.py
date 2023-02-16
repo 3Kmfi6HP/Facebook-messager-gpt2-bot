@@ -7,8 +7,8 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-VERIFY_TOKEN = os.getenv("VERIFY_TOKEN")
-ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+VERIFY_TOKEN = os.environ.get("VERIFY_TOKEN")
+ACCESS_TOKEN = os.environ.get("ACCESS_TOKEN")
 
 # This function is used to send the message to GPT-2 API
 def send_message_to_gpt2(text):
