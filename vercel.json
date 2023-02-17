@@ -1,8 +1,4 @@
 {
-    "env": {
-        "ACCESS_TOKEN": "ACCESS_TOKEN",
-        "VERIFY_TOKEN": "VERIFY_TOKEN"
-    },
     "builds": [
         { "src": "*.html", "use": "@vercel/static" },
         { "src": "app/*.py", "use": "@vercel/python" }
